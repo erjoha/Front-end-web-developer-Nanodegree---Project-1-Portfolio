@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<!-- lang attribute specifies the language of the element's content -->
+<html lang="en">
+
+<!-- container for metadata, metadata about the HTML document -->
+
+<head>
+    <!-- character encoding standard, covers almost all of the characters and symbols in the world -->
+    <meta charset="UTF-8">
+    <!-- meta tag to control layout on mobile browsers, responsive metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- defines the title of the document -->
+    <title>Portfolio</title>
+
+    <!-- link to bootstraps css file -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- link to custom/own css file -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- link to bootstraps javascript/js file -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- link to googles fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- ending head tag -->
+</head>
+
+<!-- defines the document's body, contains all the contents of an HTML document -->
+
+<body>
+    <header>
+        <!-- bootstrap grid system rule, rows must be placed within a .container -->
+        <div class="container">
+            <!-- creates a new row, and have children of rows -->
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="pictures/udacity_logo.png" width="100" height="50" class="img-responsive" alt="logo">
+                </div>
+                <div class="col-md-6">
+                    <h1>Erica Johansson</h1>
+                    <h2>Front-end</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- the class row creates a row, and have children of rows (making grid layout) -->
+            <div class="row">
+                <!-- content placed withing a column, created by specifying the number of 12 available columns to span -->
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- content placed withing a column, created by specifying the number of 12 available columns to span -->
+                <div class="col-md-12">
+                    <img src="pictures/header.jpg" width="1000" height="350" class="img-responsive" alt="header">
+                </div>
+            </div>
+
+
+            <!-- the class row creates a row, and have children of rows (making grid layout) -->
+            <div class="row">
+                <!-- content placed withing a column, created by specifying the number of 12 available columns to span -->
+                <div class="col-md-12">
+                    <br>
+                    <p class="projectheading">Featured Work</p>
+                </div>
+            </div>
+
+
+            <!-- the class row creates a row, and have children of rows (making grid layout) -->
+            <div class="row">
+                <!-- content placed withing a column, created by specifying the number of 4 of 12 available columns to span -->
+
+                <div class="col-md-4">
+                    <article>
+                        <!-- the image will lanuch the modal -->
+                        <img class="img-responsive img-center" src="pictures/project1-mini.png" alt="project1" data-toggle="modal" data-target="#project1">
+                        <p class="projects">Online Resume</p>
+                        <p><a href="www.github.com">Link to project</a>
+                        </p>
+                    </article>
+                </div>
+                <!-- content placed withing a column, created by specifying the number of 4 of 12 available columns to span -->
+                <div class="col-md-4">
+                    <article>
+                        <!-- the image will lanuch the modal -->
+                        <img class="img-responsive img-center" src="pictures/project2-mini.jpg" alt="project2" data-toggle="modal" data-target="#project2">
+                        <p class="projects">Arcade Game</p>
+                        <p><a href="www.github.com">Link to project</a>
+                        </p>
+                    </article>
+                </div>
+                <!-- content placed withing a column, created by specifying the number of 4 of 12 available columns to span -->
+                <div class="col-md-4">
+                    <article>
+                        <!-- the image will lanuch the modal -->
+                        <img class="img-responsive img-center" src="pictures/project3-mini.jpg" alt="project3" data-toggle="modal" data-target="#project3">
+                        <p class="projects">Neighborhood Map</p>
+                        <p><a href="www.github.com">Link to project</a>
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+
+            <!-- the class row creates a row, and have children of rows (making grid layout) -->
+            <div class="row">
+                <!-- content placed withing a column, created by specifying the number of 12 available columns to span -->
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <!-- the class row creates a row, and have children of rows (making grid layout) -->
+            <div class="row">
+                <!-- content placed withing a column, created by specifying the number of 9 of 12 available columns to span -->
+                <div class="col-md-8">
+                    <p class="copy">&copy; 2016, Erica Johansson</p>
+                </div>
+
+                <!-- content placed withing a column, created by specifying the number of 1 of 12 available columns to span -->
+                <div class="col-md-4">
+                    <!-- socialmedia icons -->
+                    <a href="http://www.facebook.com/erica.johansson.568" target="_blank">
+                        <img src="pictures/facebook.png" alt="socialmedia-facebook">&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+
+                    <a href="https://twitter.com/erjoha" target="_blank">
+                        <img src="pictures/twitter.png" alt="socialmedia-twitter">&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+
+                    <a href="https://se.linkedin.com/in/erica-johansson-38134490" target="_blank">
+                        <img src="pictures/linkedin.png" alt="socialmedialinkedin">&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+
+                    <a href="https://github.com/erjoha" target="_blank">
+                        <img src="pictures/github.png" alt="socialmedia-github">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="ModalLabel1">Online Resume</h4>
+					<br>
+				This was the second project in Udacity's Front-End Web Developer Nanodegree. The purpose of this project was to practice basic JavaScript skills such as using objects, functions and loops. The result is an interactive online resume application that reads the content from a JSON file, and dynamically displays that content within a provided template.
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="pictures/project1.png" alt="project1-onlineresume">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="ModalLabel2">Arcade Game</h4>
+					<br>
+					 This was the third project in Udacity's Front-End Web Developer Nanodegree. The purpose of this project was to gain experience writing object-oriented JavaScript and to use HTML5 Canavas. Udacity provided the visual assets and a game loop engine. I added the basic functionalities such as player character, enemies and score function to the game - to recreate the classic arcade game. 
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="pictures/project2.jpg" alt="project2-arcadegame">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="ModalLabel3">Neighborhood Map</h4>
+					<br>
+					This was the fourth project in Udacity's Front-End Web Developer Nanodegree. The purpose of this project was to gain experience using a JavaScript framework (Knockout.js) and using third-party API's.
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="pictures/project3.jpg" alt="project3-neighborhoodmap">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ending body tag -->
+</body>
+<!-- ending html tag -->
+
+</html>
